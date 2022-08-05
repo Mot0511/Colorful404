@@ -1,0 +1,17 @@
+.body{
+    background-image: linear-gradient(#193749, #1C2D45);
+    min-height: 90vh;
+    margin-top: 0;
+    margin-right: -8px;
+    margin-left: -8px;
+    padding: 0 10vw;
+}
+.searchDiv{
+    position: relative;
+    top: 20px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(50, 84, 122, 0.92) 11.38%, rgba(58, 120, 177, 0.8) 25.23%, rgb(15, 33, 110) 100%);
+}

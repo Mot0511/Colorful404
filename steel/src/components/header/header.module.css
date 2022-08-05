@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    height: 110px;
+    background: #171A21;
+    margin: -8px;
+    display: flex;
+    justify-content: center;
+
+}
+.header div{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header .logo{
+    width: 176px;
+    height: 44px;
+    margin-top: 20%;
+}
+.menu{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.menuItem{
+    font-size: 14px;
+    text-decoration: none;
+    margin-left: 15px;
+    color: #C5C3C0;
+}
+.logDiv{
+    margin-top: 5px;
+    margin-bottom: 80px;
+    margin-left: 100px;
+}
+.logDiv button{
+    width: 150px;
+    height: 25px;
+    border: 0;
+    background-color: #5C7E10;
+    color: #e5e4dc;
+    font-size: 12px;
+}
+.logBt{
+    color: #C5C3C0;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-top: 6px;
+    text-decoration: none;
+}
+.menuItem:hover, .logBt:hover, .logDiv button:hover{
+    color: white;
+}

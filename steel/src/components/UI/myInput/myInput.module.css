@@ -1,0 +1,19 @@
+.input{
+    background-color: #316282;
+    border: 0;
+    border-radius: 3px;
+    padding-left: 10px;
+    color: white;
+}
+.input:hover{
+    border: 1px solid #4C9ACC;
+}
+.input::placeholder{
+    font-style: italic;
+    color: #0E1C25;
+    font-size: 15px;
+    font-weight: 100;
+}
+.input:focus{
+    border: 1px solid #4C9ACC;
+}

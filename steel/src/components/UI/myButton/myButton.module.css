@@ -1,0 +1,10 @@
+.button{
+    background-image: linear-gradient(to right, rgb(117, 176, 34) 5%, rgb(88, 138, 27) 95%);
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+}
+.button:hover{
+    background-image: linear-gradient(to right, #8CD429, #6AA621);
+}
