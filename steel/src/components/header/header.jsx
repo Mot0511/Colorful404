@@ -2,28 +2,8 @@ import React from 'react';
 import cl from './header.module.css'
 import logo from '../../img/logo_steam.png'
 import {Link} from "react-router-dom";
-import config from '../../../package.json'
-import axios from "axios";
 
 const Header = () => {
-    const getAllGames = () => {
-        axios.post('http://localhost:3001/sql', {
-            method: 'post',
-            data: {
-                sql: "SELECT * FROM games"
-            },
-            headers: {
-                "Content-Type": "text/html; charset=utf-8"
-            }
-        })
-            .then(res => {
-                console.log(res)
-            })
-            .catch(err => {
-                console.log(err)
-            })
-    }
-
     return (
         <div className={cl.header}>
             <div>
@@ -36,7 +16,7 @@ const Header = () => {
                 </div>
                 <div className={cl.logDiv}>
                     <a href={'/'}>
-                        <button onClick={getAllGames}>Установить Steel</button>
+                        <button>Установить Steel</button>
                     </a>
                     <Link to={'/'} className={cl.logBt}>войти</Link>
                 </div>

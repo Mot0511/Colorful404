@@ -1,5 +1,6 @@
+
 .block{
-    height: 150px;
+    height: 200px;
     border: 5px solid aqua;
     margin-bottom: 20px;
     margin-left: 100px;
@@ -9,7 +10,7 @@
     padding-bottom: 20px;
     padding-left: 20px;
 }
-.block MyButton{
+.block .MyButton{
     width: 100px;
     height: 50px;
     align-self: end;
@@ -25,4 +26,19 @@ form{
 form h1{
     background: none;
     text-align: center;
+}
+
+.post-enter {
+    transform: translateX(-150%);
+}
+.post-enter-active {
+    transform: translateX(0px);
+    transition: all 500ms;
+}
+.post-exit {
+    opacity: 1;
+}
+.post-exit-active {
+    transform: translateX(-150%);
+    transition: all 500ms;
 }

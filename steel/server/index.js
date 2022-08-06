@@ -1,10 +1,11 @@
 import express from 'express'
 import mysql from "mysql";
 import bodyParser from 'body-parser'
+import cors from 'cors'
+
 
 const app = express()
 
-const host = 'localhost'
 const port = '3001'
 
 // connect to DB
@@ -23,10 +24,8 @@ conn.connect((err) => {
     }
 });
 
-// parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }))
-
-// parse application/json
+app.use(cors({origin: true, credentials: true}));
 app.use(bodyParser.json())
 
 // listening requests
